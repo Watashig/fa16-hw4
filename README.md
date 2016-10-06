@@ -35,7 +35,7 @@ Create a home page that renders all `Cat`s, `Todo`s, and `User`s in your databas
 Please briefly examine the repo before you start to see what's been done for you already. The directories `app/models` and `db/migrations` are definitely places to look at.
 
 As well, remember to run your migrations with
-```
+``` bash
 rake db:migrate
 ```
 when you want to make changes to your database.
@@ -47,7 +47,7 @@ Note that a walkthrough for the homework is included below. For a challenge, try
 ### Cats
 One of the first things you should notice is that there is already a migration to create a `Cats` table with a name field of type string in it, but you don't have a model associated with it yet. [Define the model](http://guides.rubyonrails.org/active_record_basics.html#creating-active-record-models) in `app/models`. Then, create a method called `meow` (you can call it whatever really) and just have it `puts "meow"` to the console. Save the file and fire up your Rails console with `rails c`; check to see if you can create a new `Cat` and call its `meow` method as shown below.
 
-```
+``` bash
 $ rails console
 > c = Cat.new
 > c.meow # Should print out meow
@@ -56,7 +56,7 @@ $ rails console
 ### Users
 For the `User` model, you'll see a migration - which was made to create a user with a name and an email - and an associated model. What you need to do is add an integer field called age to our `Users` table. Check out the [Rails documentation](http://edgeguides.rubyonrails.org/active_record_migrations.html#creating-a-migration) to see how to do this. Run the migration and fire up your Rails console; check to see if your `User` model now has an age as shown below.
 
-```
+``` bash
 $ rails console
 > u = User.new
 > u.age # Should not error
