@@ -1,0 +1,53 @@
+<h1>Cats</h1>
+
+<p>There's actually no data stored yet, so nothing is displayed.</p>
+
+<table>
+	<tr>
+	<td>name</td>
+	</tr>
+
+	<% for cat in @cats %>
+		<tr>
+		<td><%= name %></td>
+		</tr>
+	<% end %>
+</table>
+
+<h1>Todos</h1>
+
+<p>There's actually no data stored yet, so nothing is displayed.</p>
+
+<table>
+	<tr>
+	<td>tasks</td>
+	<td>finished</td>
+	</tr>
+
+	<% for todo in @todos %>
+		<tr>
+		<td><%= task %></td>
+		<td><%= finished %></td>
+		</tr>
+	<% end %>
+</table>
+
+<h1>Users</h1>
+
+<p>There's actually no data stored yet, so nothing is displayed.</p>
+
+<table>
+	<tr>
+	<td>username</td>
+	<td>email</td>
+	<td>age</td>
+	</tr>
+
+	<% for user in @users %>
+		<tr>
+		<td><%= username %></td>
+		<td><%= email %></td>
+		<td><%= age %></td>
+		</tr>
+	<% end %>
+</table>
